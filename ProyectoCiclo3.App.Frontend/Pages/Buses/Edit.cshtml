@@ -18,7 +18,7 @@
   <label for="numero de asientos" class="form-label">Numero de asientos:</label>
   <input type="number" class="form-control" id="numero de asientos" name="numero de asientos" placeholder="Numero de asientos" asp-for="@bus.numero_asientos>
   <label for="placa" class="form-label">Placa:</label>
-  <input type="text" class="form-control" id="placa" name="placa" placeholder="Placa" readonly>
+  <input type="text" class="form-control" id="placa" name="placa" placeholder="Placa" readonly asp-for="@bus.placa">
   <hr>
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
