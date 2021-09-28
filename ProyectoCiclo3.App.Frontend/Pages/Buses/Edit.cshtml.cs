@@ -12,6 +12,8 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     public class EditBusModel : PageModel
     {
         private readonly RepositorioBuses repositorioBuses;
+       
+        [BindProperty]
         public Buses Bus {get;set;}
  
         public EditBusModel(RepositorioBuses repositorioBuses)
@@ -24,6 +26,19 @@ namespace ProyectoCiclo3.App.Frontend.Pages
                 Bus=repositorioBuses.GetBusWithId(busId);
                 return Page();
  
+        }
+
+        public IActionResult OnPost()
+        {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+            if(Bus.id>0)
+            {
+            Bus = repositorioBuses.Update(Bus);
+            }
+            return RedirectToPage("./List");
         }
     }
 }

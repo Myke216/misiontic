@@ -1,5 +1,7 @@
 @page
+@model ProyectoCiclo3.App.Frontend.Pages.EditBusModel
 @{
+    var bus = Model.Bus;
 }
  
 <div class="text-center">
@@ -7,7 +9,7 @@
   <label for="id" class="form-label">Id:</label>
   <input type="number" class="form-control" id="id" name="id" placeholder="Id">
   <label for="marca" class="form-label">Marca:</label>
-  <input type="number" class="form-control" id="marca" name="marca" placeholder="Marca">
+  <input type="text" class="form-control" id="marca" name="marca" placeholder="Marca">
   <label for="modelo" class="form-label">Modelo:</label>
   <input type="number" class="form-control" id="modelo" name="modelo" placeholder="Modelo">
   <label for="kilometraje" class="form-label">Kilometraje:</label>
@@ -15,7 +17,7 @@
   <label for="numero de asientos" class="form-label">Numero de asientos:</label>
   <input type="number" class="form-control" id="numero de asientos" name="numero de asientos" placeholder="Numero de asientos">
   <label for="placa" class="form-label">Placa:</label>
-  <input type="text" class="form-control" id="placa" name="placa" placeholder="Placa">
+  <input type="text" class="form-control" id="placa" name="placa" placeholder="Placa" readonly>
   <hr>
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
