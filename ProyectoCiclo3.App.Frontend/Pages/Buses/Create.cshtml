@@ -1,11 +1,11 @@
 @page
-@model ProyectoCiclo3.App.Frontend.Pages.EditBusModel
+@model ProyectoCiclo3.App.Frontend.Pages.FormBusModel
 @{
     var bus = Model.Bus;
 }
  
 <div class="text-center">
-<form action="">
+<form method="POST">
   <label for="id" class="form-label">Id:</label>
   <input type="number" class="form-control" id="id" name="id" placeholder="Id">
   <label for="marca" class="form-label">Marca:</label>

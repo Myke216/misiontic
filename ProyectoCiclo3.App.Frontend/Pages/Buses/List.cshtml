@@ -5,6 +5,15 @@
  
 <h1>Listado de Buses</h1>
 <table class="table">
+    <thead>
+        <th>Id</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Kilometraje</th>
+        <th>Numero de asiento</th>
+        <th>Placa</th>
+        <th>Acciones</th>
+    </thead>
     @foreach (var bus in Model.Buses)
     {
         <tr>
