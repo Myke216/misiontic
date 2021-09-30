@@ -6,31 +6,36 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProyectoCiclo3.App.Persistencia.AppRepositorios;
 using ProyectoCiclo3.App.Dominio;
-
+ 
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
-    public class FormEstacionModel : PageModel
+    public class EditEstacionModel : PageModel
     {
         private readonly RepositorioEstaciones repositorioEstaciones;
         [BindProperty]
-        public Estaciones Estacion {get; set;}
-
-        public FormEstacionModel(RepositorioEstaciones repositorioEstaciones)
-        {
+        public Estaciones Estacion {get;set;}
+ 
+        public EditEstacionModel(RepositorioEstaciones repositorioEstaciones)
+       {
             this.repositorioEstaciones= repositorioEstaciones;
-        }
-
-        public void OnGet()
+       }
+ 
+        public IActionResult OnGet(int estacionId)
         {
-
+                Estacion=repositorioEstaciones.GetEstacionWithId(estacionId);
+                return Page();
+ 
         }
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid)
+            if(!ModelState.IsValid)
             {
                 return Page();
             }
-            Estacion = repositorioEstaciones.Create(Estacion);
+            if(Estacion.id>0)
+            {
+            Estacion = repositorioEstaciones.Update(Estacion);
+            }
             return RedirectToPage("./List");
         }
 

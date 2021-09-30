@@ -11,7 +11,6 @@ namespace ProyectoCiclo3.App.Frontend.Pages
 {
     public class FormBusModel : PageModel
     {
- 
         private readonly RepositorioBuses repositorioBuses;
         [BindProperty]
         public Buses Bus {get;set;}
