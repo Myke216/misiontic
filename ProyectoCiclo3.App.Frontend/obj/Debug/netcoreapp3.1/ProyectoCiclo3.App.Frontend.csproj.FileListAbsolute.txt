@@ -86,3 +86,4 @@ C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\Debu
 C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\bin\Debug\netcoreapp3.1\ProyectoCiclo3.App.Dominio.pdb
 C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Buses\Details.cshtml.g.cs
 C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Buses\Edit.cshtml.g.cs
+C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Rutas\List.cshtml.g.cs
