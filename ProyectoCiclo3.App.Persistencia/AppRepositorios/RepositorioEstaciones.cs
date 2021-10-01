@@ -28,13 +28,17 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         public Estaciones GetEstacionWithId(int id){
             return estaciones.SingleOrDefault(b => b.id == id);
         }
+
         public Estaciones Create(Estaciones newEstacion)
         {
-           newEstacion.id=estaciones.Max(r => r.id) +1; 
+           if(estaciones.Count > 0){
+           newEstacion.id=estaciones.Max(r => r.id) +1;  
+            }else{
+               newEstacion.id = 1; 
+            }
            estaciones.Add(newEstacion);
            return newEstacion;
         }
-
         public Estaciones Update(Estaciones newEstacion){
             var estacion= estaciones.SingleOrDefault(b => b.id == newEstacion.id);
             if(estacion != null){
@@ -46,6 +50,11 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
             }
         return estacion;
         }
-
+        public Estaciones Delete(int id)
+        {
+        var estacion= estaciones.SingleOrDefault(b => b.id == id);
+        estaciones.Remove(estacion);
+        return estacion;
+        }
     }
 }
