@@ -1,25 +1,25 @@
-
 @page
 @model ProyectoCiclo3.App.Frontend.Pages.EditEstacionModel
 @{
     var estacion = Model.Estacion;
 }
+
+
 <div class="text-center">
-<form method=”POST”>
+<form method="post">
   @* <label for="id" class="form-label">Id:</label> *@
-  <input type="number" class="form-control d-none" id="id" name="id" placeholder="Id" asp-for="@estacion.id>
+  <input type="number" class="form-control d-none" id="id" name="id" placeholder="Id" asp-for="@estacion.id">
   <label for="marca" class="form-label">Nombre:</label>
-  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" asp-for="@estacion.nombre>
+  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" asp-for="@estacion.nombre">
   <label for="direccion" class="form-label">Direccion:</label>
   <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion" asp-for="@estacion.direccion">
   <label for="coord_x" class="form-label">Coordenada x:</label>
-  <input type="text" class="form-control" id="coord_x" name="coord_x" placeholder="Coordenada en x" asp-for="@estacion.coord_x>
+  <input type="text" class="form-control" id="coord_x" name="coord_x" placeholder="Coordenada en x" asp-for="@estacion.coord_x">
   <label for="coord_y" class="form-label">Coordenada y:</label>
-  <input type="text" class="form-control" id="coord_y" name="coord_y" placeholder="Coordenada en y" asp-for="@estacion.coord_y>
+  <input type="text" class="form-control" id="coord_y" name="coord_y" placeholder="Coordenada en y" asp-for="@estacion.coord_y">
   <label for="tipo" class="form-label">Tipo:</label>
-  <input type="text" class="form-control" id="tipo" name="tipo" placeholder="Tipo" asp-for="@estacion.tipo>
+  <input type="text" class="form-control" id="tipo" name="tipo" placeholder="Tipo" asp-for="@estacion.tipo">
   <hr>
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 </div>
-

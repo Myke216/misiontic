@@ -1,10 +1,11 @@
 @page
-@model ProyectoCiclo3.App.Frontend.Pages.FormEstaciondModel
+@model ProyectoCiclo3.App.Frontend.Pages.FormEstacionModel
 @{
+  var estacion = Model.Estacion;
 }
  
 <div class="text-center">
-<form method=”POST”>
+<form method="POST">
   <label for="id" class="form-label">Id:</label>
   <input type="number" class="form-control" id="id" name="id" placeholder="Id">
   <label for="marca" class="form-label">Nombre:</label>

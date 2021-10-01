@@ -10,8 +10,8 @@ using ProyectoCiclo3.App.Dominio;
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
     public class EditEstacionModel : PageModel
-    {
-        private readonly RepositorioEstaciones repositorioEstaciones;
+    {      
+        private readonly RepositorioEstaciones repositorioEstaciones;    
         [BindProperty]
         public Estaciones Estacion {get;set;}
  
