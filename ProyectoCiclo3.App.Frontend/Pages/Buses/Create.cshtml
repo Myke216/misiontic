@@ -9,7 +9,8 @@
   <label for="id" class="form-label">Id:</label>
   <input type="number" class="form-control" id="id" name="id" placeholder="Id" required>
   <label for="marca" class="form-label">Marca:</label>
-  <input type="text" class="form-control" id="marca" name="marca" placeholder="Marca">
+  <input type="text" class="form-control" placeholder="Marca" asp-for="Bus.marca">
+  <span class="text-danger" asp-validation-for="Bus.marca"></span>
   <label for="modelo" class="form-label">Modelo:</label>
   <input type="number" class="form-control" id="modelo" name="modelo" placeholder="Modelo">
   <label for="kilometraje" class="form-label">Kilometraje:</label>
