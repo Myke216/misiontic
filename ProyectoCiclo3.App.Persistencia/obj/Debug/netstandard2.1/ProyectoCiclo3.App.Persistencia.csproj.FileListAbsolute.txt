@@ -10,3 +10,15 @@ C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\bin\
 C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CopyComplete
 C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
 C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.deps.json
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Dominio.dll
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Dominio.pdb
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.AssemblyInfo.cs
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CopyComplete
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
+C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
