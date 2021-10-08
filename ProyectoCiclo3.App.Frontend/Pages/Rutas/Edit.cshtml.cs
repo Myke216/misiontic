@@ -6,32 +6,38 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ProyectoCiclo3.App.Persistencia.AppRepositorios;
 using ProyectoCiclo3.App.Dominio;
-
+ 
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
-    public class ListRutasModel : PageModel
+    public class EditRutasModel : PageModel
     {
         private readonly RepositorioRutas repositorioRutas;
         [BindProperty]
-        public Rutas Ruta { get; set; }
-        public IEnumerable<Rutas> Rutas { get; set; }
-
-        public ListRutasModel(RepositorioRutas repositorioRutas)
+        public Rutas Ruta {get;set;}
+ 
+        public EditRutasModel(RepositorioRutas repositorioRutas)
+       {
+            this.repositorioRutas=repositorioRutas;
+       }
+ 
+        public IActionResult OnGet(int rutasId)
         {
-            this.repositorioRutas = repositorioRutas;
-        }
-
-        public void OnGet()
-        {
-            Rutas = repositorioRutas.GetAll();
+                Ruta=repositorioRutas.GetRutasWithId(rutasId);
+                return Page();
+ 
         }
         public IActionResult OnPost()
         {
-            if (Ruta.id > 0)
+            if(!ModelState.IsValid)
             {
-                Ruta = repositorioRutas.Delete(Ruta.id);
+                return Page();
+            }
+            if(Ruta.id>0)
+            {
+            Ruta = repositorioRutas.Update(Ruta);
             }
             return RedirectToPage("./List");
         }
+
     }
 }
