@@ -7,7 +7,7 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 {
     public class RepositorioBuses
     {
-        List<Buses> buses;
+        //List<Buses> buses;
         private readonly AppContext _appContext = new AppContext(); 
  //   public RepositorioBuses()
    //     {
