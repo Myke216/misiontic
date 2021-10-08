@@ -8,54 +8,51 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
 {
     public class RepositorioRutas
     {
-        List<Rutas> rutas;
- 
-    public RepositorioRutas()
+        private readonly AppContext _appContext = new AppContext(); 
 
-        {
-            
-            rutas= new List<Rutas>()
-            {
-                new Rutas{id=1, origen=1,destino="Norte",tiempo_estimado= 100},
-                new Rutas{id= 2 ,origen=2,destino="Sur",tiempo_estimado= 120},
-                new Rutas{id =3, origen=3,destino="Oriente",tiempo_estimado= 200}
- 
-            };
-        }
  
         public IEnumerable<Rutas> GetAll()
         {
-            return rutas;
+            return _appContext.Rutas;
         }
  
         public Rutas GetRutasWithId(int id){
-            return rutas.SingleOrDefault(b => b.id == id);
+               return _appContext.Rutas.Find(id);
         }
         public Rutas Create(Rutas newRutas){
-           newRutas.id=rutas.Max(r => r.id) +1; 
-           rutas.Add(newRutas);
-           return newRutas;
+           var addRutas = _appContext.Rutas.Add(newRutas);
+            _appContext.SaveChanges();
+            return addRutas.Entity;
         }
     
-        public Rutas Delete(int id)
+        public void Delete(int id)
         {
-        var ruta= rutas.SingleOrDefault(b => b.id == id);
-        rutas.Remove(ruta);
-        return ruta;
+        var ruta = _appContext.Rutas.Find(id);
+        if (ruta == null)
+            return;
+        _appContext.Rutas.Remove(ruta);
+        _appContext.SaveChanges();
         }
+        
 
 
         public  Rutas Update(Rutas newRutas){
-            var ruta= rutas.SingleOrDefault(b => b.id == newRutas.id);
+           var ruta = _appContext.Rutas.Find(newRutas.id);
             if(ruta != null){
-                ruta.id = newRutas.id;
                 ruta.origen = newRutas.origen;
                 ruta.destino = newRutas.destino;
                 ruta.tiempo_estimado = newRutas.tiempo_estimado;
-                
+                //Guardar en base de datos
+                 _appContext.SaveChanges();
             }
         return ruta;
         }
 
     }
 }
+
+ 
+
+       
+
+

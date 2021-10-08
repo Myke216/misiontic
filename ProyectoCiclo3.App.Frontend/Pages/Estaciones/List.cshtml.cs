@@ -29,7 +29,7 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         {
             if (Estacion.id > 0)
             {
-                Estacion = repositorioEstaciones.Delete(Estacion.id);
+              repositorioEstaciones.Delete(Estacion.id);
             }
             return RedirectToPage("./List");
         }

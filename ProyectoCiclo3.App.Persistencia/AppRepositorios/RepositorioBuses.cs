@@ -17,21 +17,14 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
           //      new Buses{id=2,marca="Toyota",modelo= 2021,kilometraje= 90000,numero_asientos= 16,placa= "OIU859"},
             //    new Buses{id=3,marca="Mazda",modelo= 2000,kilometraje= 150000,numero_asientos= 24,placa= "YUH859"}
  
-<<<<<<< HEAD
-    public RepositorioBuses()
-        {
-            buses= new List<Buses>()
-            {
-                new Buses{id=2,marca="Audi",modelo= 2020,kilometraje= 100000,numero_asientos= 4,placa= "POP678"},
-                new Buses{id=3,marca="Toyota",modelo= 2021,kilometraje= 90000,numero_asientos= 16,placa= "OIU859"},
-                new Buses{id=4,marca="Mazda",modelo= 2000,kilometraje= 150000,numero_asientos= 24,placa= "YUH859"}
- 
-            };
-        }
-=======
+
+    
+
+
 //            };
   //      }
->>>>>>> 2e178c994aa33b1bbfc8501f2b6b39b9a2b37424
+
+
  
         public IEnumerable<Buses> GetAll()
         {
