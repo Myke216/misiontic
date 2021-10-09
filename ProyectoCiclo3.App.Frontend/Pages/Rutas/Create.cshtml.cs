@@ -12,18 +12,22 @@ namespace ProyectoCiclo3.App.Frontend.Pages
 {
     public class FormRutasModel : PageModel
     {
+        private readonly RepositorioEstaciones repositorioEstaciones;
         private readonly RepositorioRutas repositorioRutas;
+        public IEnumerable<Estaciones> Estaciones {get;set;}
         [BindProperty]
-        public Rutas Ruta {get;set;}
+        public Rutas Rutas {get;set;}
  
-        public FormRutasModel(RepositorioRutas repositorioRutas)
+        public FormRutasModel(RepositorioRutas repositorioRutas,RepositorioEstaciones repositorioEstaciones)
        {
             this.repositorioRutas=repositorioRutas;
+            this.repositorioEstaciones=repositorioEstaciones;
        }
+
 
         public void OnGet()
         {
- 
+        Estaciones=repositorioEstaciones.GetAll();
         }
         public IActionResult OnPost()
         {
@@ -31,7 +35,7 @@ namespace ProyectoCiclo3.App.Frontend.Pages
             {
                 return Page();
             }            
-            Ruta = repositorioRutas.Create(Ruta);            
+            Rutas = repositorioRutas.Create(Rutas);            
             return RedirectToPage("./List");
         }
 
