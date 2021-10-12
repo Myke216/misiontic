@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 namespace ProyectoCiclo3.App.Dominio{
 	public class Rutas{
 		public int id {get;set;}

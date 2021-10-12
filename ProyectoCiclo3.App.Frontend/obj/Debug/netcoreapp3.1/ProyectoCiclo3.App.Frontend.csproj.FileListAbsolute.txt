@@ -182,3 +182,5 @@ C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\Proye
 C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\ProyectoCiclo3.App.Frontend.genruntimeconfig.cache
 C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Rutas\Edit.cshtml.g.cs
 C:\Users\camil\OneDrive\Documentos\Escritorio\Repositorio Grupal\misiontic\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Rutas\Details.cshtml.g.cs
+C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Rutas\Details.cshtml.g.cs
+C:\Users\Usuario\Desktop\ProyectoCiclo3.App\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Rutas\Edit.cshtml.g.cs
