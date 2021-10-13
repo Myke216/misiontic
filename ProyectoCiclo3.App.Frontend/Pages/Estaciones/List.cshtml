@@ -28,7 +28,8 @@
                     class="fas fa-adjust"></i>Ver</a>
                 <a class="btn btn-info" asp-page="./Edit" asp-route-estacionId="@estacion.id">Editar</a>
                 <form method="POST">
-                    <input type="number" class="form-control d-none" id="id" name="id" placeholder="id" asp-for="@estacion.id">
+                    <input type="number" class="form-control d-none" id="id" name="id" placeholder="id"
+                    asp-for="@estacion.id">
                     <button type="submit" class="btn btn-danger" href="">Eliminar</button>
                 </form>
             </td>
