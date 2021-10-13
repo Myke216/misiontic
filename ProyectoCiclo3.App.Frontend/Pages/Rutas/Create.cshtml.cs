@@ -35,10 +35,10 @@ namespace ProyectoCiclo3.App.Frontend.Pages
             if(!ModelState.IsValid)
             {
                 return Page();
-            }            
+            }else{            
             Rutas = repositorioRutas.Create(Rutas);            
             return RedirectToPage("./List");
+            }
         }
-
     }
 }
